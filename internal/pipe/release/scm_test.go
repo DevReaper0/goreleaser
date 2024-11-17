@@ -71,7 +71,7 @@ func TestSetupGitea(t *testing.T) {
 	t.Run("no repo", func(t *testing.T) {
 		ctx := testctx.New()
 		require.NoError(t, setupGitea(ctx))
-		require.Equal(t, "goreleaser", ctx.Config.Release.Gitea.Owner)
+		require.Equal(t, "DevReaper0", ctx.Config.Release.Gitea.Owner)
 		require.Equal(t, "goreleaser", ctx.Config.Release.Gitea.Name)
 	})
 
@@ -127,7 +127,7 @@ func TestSetupGitHub(t *testing.T) {
 	t.Run("no repo", func(t *testing.T) {
 		ctx := testctx.New()
 		require.NoError(t, setupGitHub(ctx))
-		require.Equal(t, "goreleaser", ctx.Config.Release.GitHub.Owner)
+		require.Equal(t, "DevReaper0", ctx.Config.Release.GitHub.Owner)
 		require.Equal(t, "goreleaser", ctx.Config.Release.GitHub.Name)
 	})
 

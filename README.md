@@ -6,6 +6,28 @@
 
 ---
 
+### What is this fork?
+
+This repository is a fork of GoReleaser containing some changes to implement pro features and other various improvements which wouldn't be accepted in the main repository. Created mainly for use in [Libra](https://github.com/LibraMusic).
+
+The currently wanted Pro features are:
+- [ ] [Nightly Builds](https://goreleaser.com/customization/nightlies/)
+- [ ] [Includes](https://goreleaser.com/customization/includes/)
+- [ ] [Template Files](https://goreleaser.com/customization/templatefiles/)
+- [ ] [Split & Merge](https://goreleaser.com/customization/partial/)
+- [ ] [Custom Variables](https://goreleaser.com/customization/templates/#custom-variables) in Name Templates
+- [ ] If conditions for various fields
+- [ ] `tag`, `header`, and `footer` fields in [Release](https://goreleaser.com/customization/release/)
+- [ ] `ignore_tag_prefixes` field in [Git](https://goreleaser.com/customization/git/)
+- [ ] After [Hooks](https://goreleaser.com/customization/hooks/#pro)
+- [ ] [Pre-Built Binaries](https://goreleaser.com/customization/builds/#import-pre-built-binaries)
+- [ ] [Before Publish Hooks](https://goreleaser.com/customization/beforepublish/)
+
+And the currently wanted new features are:
+- [ ] Default Version (not very useful once a tag has been created)
+
+---
+
 GoReleaser builds Go binaries for several platforms, creates a GitHub release and then
 pushes a Homebrew formula to a tap repository. All that wrapped in your favorite CI.
 
